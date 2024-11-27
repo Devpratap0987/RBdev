@@ -5,7 +5,9 @@ const axiosInstance = axios.create({
   baseURL: "http://localhost:3000", // Base URL for your real or mock server
   timeout: 1000,
 });
-
+axiosInstance.onGet("/", (req, res) => {
+  res.send("Hello World!");
+});
 // Use MockAdapter only in testing environments
 if (process.env.NODE_ENV === "test") {
   const mock = new MockAdapter(axiosInstance, { delayResponse: 500 });
