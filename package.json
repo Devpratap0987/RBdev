@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "start": "json-server --watch db.json --port 3000",
+    "start": "json-server --watch db.json --port 8000",
     "lint": "eslint .",
     "preview": "vite preview"
   },
