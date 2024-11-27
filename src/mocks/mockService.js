@@ -2,7 +2,7 @@ import axios from "axios";
 import MockAdapter from "axios-mock-adapter";
 const port =3000;
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:3000", // Base URL for your real or mock server
+  baseURL: "http://localhost:8000", // Base URL for your real or mock server
   timeout: 1000,
 });
 axiosInstance.onGet("/", (req, res) => {
